@@ -50,7 +50,7 @@ function scrollata() {
     navbar.style.borderBottom = "none";
   } else {
     // Altrimenti, mostra la navbar con altezza 200px
-    navbar.style.height = "200px";
+    navbar.style.height = "220px";
     navbar.style.backgroundColor = "transparent";
     navbar.style.borderBottom = "2px solid darkorange";
   }
