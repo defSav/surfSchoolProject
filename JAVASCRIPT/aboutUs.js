@@ -1,3 +1,7 @@
+
+/************ FUNZIONE PER LA NAVBAR E PER IL PULSANTE TORNA SU ************/
+
+
 // Aspetta il caricamento completo della pagina prima di eseguire lo script
 window.onload = function () {
   // Assegna la funzione scrollata() all'evento onscroll
@@ -47,3 +51,27 @@ function scrollata() {
 }
 
 
+
+/********** FUNZIONE PER IL CONTROLLO DELLA NEWSLETTER NEL FOOTER ***********/
+
+
+ document.addEventListener("DOMContentLoaded", function() {
+        // Il codice JavaScript che accede agli elementi del DOM va qui
+        function validateForm() {
+            var email = document.getElementById("eMail").value;
+
+            // Validazione del campo email
+            if (email === "") {
+                alert("Inserisci la tua email.");
+                console.log("Email non inserita");
+                return false;
+            } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+                alert("L'indirizzo email non è valido. Inserisci un indirizzo email valido.");
+                console.log("Email non valida");
+                return false;
+            }
+
+            // Se la validazione passa, ritorno true per inviare il form
+            return true;
+        }
+    });
