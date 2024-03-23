@@ -165,10 +165,12 @@ li img {
     flex: 1; /* Il testo occupa tutto lo spazio disponibile */
 }
 
-#condizioniMeteo {
+#condizioniMeteo h5 {
     font-family: dakdo;
     font-size: 36px;
     text-align: center;
+    margin-top: 2%;
+    letter-spacing: 0.3vh;
 }
 
 #condizioniMeteo p {
@@ -250,19 +252,7 @@ add a black background color with a little bit see-through */
     letter-spacing: 3px;
     text-align: center;
     margin-top: 125px;
-
 }
-
-
-
-
-
-
-
-
-
-
-
 footer {
     display: flex;
     align-items: center;
