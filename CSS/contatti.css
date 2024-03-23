@@ -3,7 +3,7 @@ body {
     margin: 0;
     /* imposta il margine del body a 0px per una maggiore coerenza e controllo del layout */
     /*background-color: #f2ae49;*/
-    background: linear-gradient(to bottom, yellow, orange);
+    background: linear-gradient(to bottom, #fafa15, #FFA500);
 }
 
 /*importazione google font*/
@@ -26,7 +26,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: transparent;
-    border-bottom: 2px solid darkorange;
+    border-bottom: 2px solid #FFA500;
     height: 30vh;
     position: fixed;
     z-index: 2;
@@ -40,7 +40,7 @@ li a {
     display: block;
     font-family: dakdo, sans-serif;
     width: 100%;
-    color: darkorange;
+    color: #FFA500;
     text-align: center;
     padding: 1vw 1vw;
     text-decoration: none;
@@ -50,13 +50,13 @@ li a {
     font-weight: bold;
     opacity: 0.8;
     /*effetto opaco */
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px #000000;
     /* effetto ombreggiatura */
     letter-spacing: 0.2vw;
 }
 
 li a:hover {
-    color: yellow;
+    color: #fafa15;
 }
 
 li img {
@@ -81,14 +81,14 @@ li img {
     /* l’elemento sarà spostato verso il 10% della distanza dall’alto rispetto al suo contenitore genitor */
     left: 57%;
     right: 4%;
-    color: yellow;
+    color: #fafa15;
     font-size: 900%;
     font-family: dakdo;
     font-weight: bolder;
     text-align: right;
     letter-spacing: 0.4vw;
     opacity: 0.90;
-    text-shadow: 5px 5px 8px rgb(0, 0, 0);
+    text-shadow: 5px 5px 8px #000000;
     /* effetto ombreggiatura */
 }
 
@@ -126,9 +126,9 @@ li img {
     display: flex;
     justify-content: center;
     font-family: nunitoSans;
-    color: #000;
+    color: #000000;
     font-size: 430%;
-    border: 2px solid black;
+    border: 2px solid #000000;
     border-radius: 20vh;
     margin: 5%;
 }
@@ -147,7 +147,7 @@ h5 {
 footer {
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: #000000;
     height: auto;
     line-height: 1;
     width: 100%;
@@ -158,7 +158,7 @@ footer {
     font-size: 300%;
     font-family: dakdo;
     letter-spacing: 0.2vw;
-    color: white;
+    color: #fff;
 }
 
 
@@ -168,7 +168,7 @@ footer {
     font-size: 150%;
     font-family: nunitoSans, sans-serif;
     font-weight: bold;
-    color: white;
+    color: #fff;
 }
 
 /* formattazione button submit */
@@ -198,7 +198,7 @@ footer {
 }
 
 /* formattazione casella inserimento e-mail */
-#eMail {
+#eMail2 {
     height: auto;
     width: 60%;
 }
@@ -215,7 +215,7 @@ footer {
     font-family: nunitoSans;
     font-size: 100%;
     font-weight: bold;
-    color: whitesmoke;
+    color: #fff;
 }
 
 /* selettore di fratelli adiacenti */
@@ -266,8 +266,7 @@ label {
     font-size: 120%;
 }
 
-input,
-textarea {
+#nome, #cognome, #telefono, #email, #messaggio {
     border: 1px solid #ddd;
     padding: 0.8%;
     width: 100%;
@@ -280,7 +279,7 @@ textarea {
 }
 
 button {
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
     cursor: pointer;
     font-size: 100%;
@@ -300,8 +299,7 @@ button:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    /*background-color: darkorange; */
-    color: white;
+    color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;

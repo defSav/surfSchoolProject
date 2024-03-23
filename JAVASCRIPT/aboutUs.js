@@ -1,6 +1,4 @@
-
 /************ FUNZIONE PER LA NAVBAR E PER IL PULSANTE TORNA SU ************/
-
 
 // Aspetta il caricamento completo della pagina prima di eseguire lo script
 window.onload = function () {
@@ -10,10 +8,12 @@ window.onload = function () {
   };
 
   // Gestisci il click sul pulsante "Torna su"
-  document.getElementById("backToTopBtn").addEventListener("click", function(event) {
-    event.preventDefault(); // Evita il comportamento di default del link
-    window.scrollTo({top: 0, behavior: 'smooth'}); // Scorrimento fluido verso l'alto
-  });
+  document
+    .getElementById("backToTopBtn")
+    .addEventListener("click", function (event) {
+      event.preventDefault(); // Evita il comportamento di default del link
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Scorrimento fluido verso l'alto
+    });
 };
 
 // Funzione per gestire lo scroll e mostrare/nascondere il pulsante "Torna su"
@@ -50,28 +50,27 @@ function scrollata() {
   }
 }
 
-
-
 /********** FUNZIONE PER IL CONTROLLO DELLA NEWSLETTER NEL FOOTER ***********/
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Il codice JavaScript che accede agli elementi del DOM va qui
+  function validateForm() {
+    var email = document.getElementById("eMail").value;
 
- document.addEventListener("DOMContentLoaded", function() {
-        // Il codice JavaScript che accede agli elementi del DOM va qui
-        function validateForm() {
-            var email = document.getElementById("eMail").value;
+    // Validazione del campo email
+    if (email === "") {
+      alert("Inserisci la tua email.");
+      console.log("Email non inserita");
+      return false;
+    } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+      alert(
+        "L'indirizzo email non è valido. Inserisci un indirizzo email valido."
+      );
+      console.log("Email non valida");
+      return false;
+    }
 
-            // Validazione del campo email
-            if (email === "") {
-                alert("Inserisci la tua email.");
-                console.log("Email non inserita");
-                return false;
-            } else if (!/^\S+@\S+\.\S+$/.test(email)) {
-                alert("L'indirizzo email non è valido. Inserisci un indirizzo email valido.");
-                console.log("Email non valida");
-                return false;
-            }
-
-            // Se la validazione passa, ritorno true per inviare il form
-            return true;
-        }
-    });
+    // Se la validazione passa, ritorno true per inviare il form
+    return true;
+  }
+});
